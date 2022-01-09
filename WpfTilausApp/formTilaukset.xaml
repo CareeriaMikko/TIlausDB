@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfTilausApp.formTilaukset"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTilausApp"
+        mc:Ignorable="d"
+        Title="Tilaukset" Height="450" Width="800">
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" x:Name="dgTilaukset" HorizontalAlignment="Left" Height="198" Margin="10,10,0,0" VerticalAlignment="Top" Width="761" SelectionChanged="DgTilaukset_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=TilausID}" Header="Tilausnumero"/>
+                <DataGridTextColumn Binding="{Binding Path=AsiakasID}" Header="Asiakasnumero"/>
+                <DataGridTextColumn Binding="{Binding Path=Toimitusosoite}" Header="Toimitusosoite" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Path=Postinumero}" Header="Postinumero" />
+                <DataGridTextColumn Binding="{Binding Path=Tilauspvm}" Header="TilausPVM" />
+                <DataGridTextColumn Binding="{Binding Path=Toimituspvm}" Header="ToimitusPVM" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="txtAsiakasNumero" HorizontalAlignment="Left" Height="36" Margin="142,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
+        <Label x:Name="lblAsiakasNumero" Content="Asiakasnumero" HorizontalAlignment="Left" Height="25" Margin="142,334,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox x:Name="txtTilausNumero" HorizontalAlignment="Left" Height="36" Margin="10,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblTilausNumero" Content="Tilausnumero" HorizontalAlignment="Left" Height="25" Margin="10,334,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button x:Name="btnTallennaTilaukset" Content="Tallenna" HorizontalAlignment="Left" Height="35" Margin="555,365,0,0" VerticalAlignment="Top" Width="101" Click="BtnTallennaTilaukset_Click"/>
+        <Button x:Name="btnDeleteTilaukset" Content="Poista tilaus" HorizontalAlignment="Left" Height="35" Margin="254,364,0,0" VerticalAlignment="Top" Width="101" Click="BtnDeleteTilaukset_Click"/>
+        <Button x:Name="btnSuljeTilaukset" Content="Sulje" HorizontalAlignment="Left" Height="35" Margin="670,365,0,0" VerticalAlignment="Top" Width="101" Click="BtnSuljeTilaukset_Click"/>
+        <Button x:Name="btnMuokkaTilaukse" Content="Muokkaa tilauksia" HorizontalAlignment="Left" Height="35" Margin="10,213,0,0" VerticalAlignment="Top" Width="101" Click="BtnMuokkaaTilaukset_Click"/>
+
+
+
+    </Grid>
+</Window>

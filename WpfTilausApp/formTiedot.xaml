@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfTilausApp.formTiedot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTilausApp"
+        mc:Ignorable="d"
+        Title="Tiedot" Height="596.24" Width="1033.094">
+    <Grid>
+        <Button x:Name="BtnPostitoimiPaikat" Content="Postitoimipaikat" HorizontalAlignment="Left" Height="60" Margin="210,438,0,0" VerticalAlignment="Top" Width="535" Click="BtnPostitoimiPaikat_Click" FontSize="30"/>
+        <Button x:Name="BtnTuotteet" Content="Tuotteet" HorizontalAlignment="Left" Height="60" Margin="210,117,0,0" VerticalAlignment="Top" Width="535" Click="BtnTuotteet_Click" FontSize="30"/>
+        <Button x:Name="BtnTilaukset" Content="Tilaukset" HorizontalAlignment="Left" Height="60" Margin="210,285,0,0" VerticalAlignment="Top" Width="535" Click="BtnTilaukset_Click" FontSize="30"/>
+        <Button x:Name="BtnTilausrivit" Content="Tilausrivit" HorizontalAlignment="Left" Height="60" Margin="210,363,0,0" VerticalAlignment="Top" Width="535" Click="BtnTilausrivit_Click" FontSize="30"/>
+        <Button x:Name="BtnAsiakkaat" Content="Asiakkaat" HorizontalAlignment="Left" Height="60" Margin="210,32,0,0" VerticalAlignment="Top" Width="535" Click="BtnAsiakkaat_Click" RenderTransformOrigin="0.787,0.567" FontSize="30"/>
+        <Button x:Name="BtnKäyttäjät" Content="Käyttäjähallinta" HorizontalAlignment="Left" Height="60" Margin="210,197,0,0" VerticalAlignment="Top" Width="535" Click="BtnKayttajat_Click" FontSize="30"/>
+    </Grid>
+
+</Window>

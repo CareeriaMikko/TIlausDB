@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfTilausApp.LoginScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTilausApp"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="300" FontSize="14">
+    <Border CornerRadius="20" Margin="20">
+        <StackPanel>
+            <Label Content="Login" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="Käyttäjänimi"></Label>
+            <TextBox Name="txtKayttajanimi" FontSize="18"></TextBox>
+            <Label Content="Salasana"></Label>
+            <TextBox Name="txtSalasana" FontSize="18"></TextBox>
+            <Button Name="btnSubmit" Click="btnSubmit_Click" Content="Kirjaudu sisään" FontSize="18" Margin="60 10"></Button>
+                                     
+        </StackPanel>
+    </Border>
+</Window>
